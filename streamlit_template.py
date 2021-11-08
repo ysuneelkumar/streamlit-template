@@ -79,8 +79,8 @@ st.markdown(
 
 
 # here is how to create containers
-header_container = st.container()
-stats_container = st.container()	
+header_container = st.beta_container()
+stats_container = st.beta_container()	
 #######################################
 
 
@@ -182,7 +182,7 @@ with stats_container:
 
 	# 7 --- creating columns inside a container 
 	#		(you can create more than 2)
-	bar_col, pie_col = st.columns(2)
+	bar_col, pie_col = st.beta_columns(2)
 
 	# in order to display things inside columns, replace the st. with the column name when creating components
 
